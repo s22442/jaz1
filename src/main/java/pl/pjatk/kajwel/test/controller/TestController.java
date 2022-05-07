@@ -1,7 +1,8 @@
-package pl.pjatk.kajwel;
+package pl.pjatk.kajwel.test.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import pl.pjatk.kajwel.test.model.TestCar;
 
 import java.util.List;
 
@@ -24,12 +25,17 @@ public class TestController {
     }
 
     @GetMapping("/model")
-    public ResponseEntity<Car> getDefaultCar() {
-        return ResponseEntity.ok(new Car());
+    public ResponseEntity<TestCar> getDefaultCar() {
+        return ResponseEntity.ok(new TestCar());
     }
 
     @PostMapping("/model")
-    public ResponseEntity<Car> getCustomCar(String name, String model) {
-        return ResponseEntity.ok(new Car(name, model));
+    public ResponseEntity<TestCar> getCustomCar(String name, String model) {
+        return ResponseEntity.ok(new TestCar(name, model));
+    }
+
+    @GetMapping("/exception")
+    public void getException() {
+        throw new RuntimeException("poof!");
     }
 }

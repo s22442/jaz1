@@ -1,9 +1,11 @@
-package pl.pjatk.kajwel;
+package pl.pjatk.kajwel.some.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import pl.pjatk.kajwel.dev.bean.DevBean;
+import pl.pjatk.kajwel.some.model.SomePOJO;
 
 import java.util.List;
 
@@ -12,8 +14,8 @@ import java.util.List;
 public class SomeConfig {
 
     @Bean
-    public POJO somePOJO() {
-        return new POJO();
+    public SomePOJO somePOJO() {
+        return new SomePOJO();
     }
 
     @Bean

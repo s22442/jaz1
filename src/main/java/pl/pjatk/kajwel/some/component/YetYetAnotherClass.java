@@ -1,4 +1,4 @@
-package pl.pjatk.kajwel;
+package pl.pjatk.kajwel.some.component;
 
 public class YetYetAnotherClass {
     public YetYetAnotherClass() {

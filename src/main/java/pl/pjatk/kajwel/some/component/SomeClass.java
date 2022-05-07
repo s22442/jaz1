@@ -1,4 +1,4 @@
-package pl.pjatk.kajwel;
+package pl.pjatk.kajwel.some.component;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

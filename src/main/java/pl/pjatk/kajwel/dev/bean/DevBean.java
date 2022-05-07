@@ -1,4 +1,4 @@
-package pl.pjatk.kajwel;
+package pl.pjatk.kajwel.dev.bean;
 
 public class DevBean {
     public DevBean() {

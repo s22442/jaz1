@@ -1,4 +1,4 @@
-package pl.pjatk.kajwel;
+package pl.pjatk.kajwel.homework;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

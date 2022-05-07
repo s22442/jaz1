@@ -1,15 +1,15 @@
-package pl.pjatk.kajwel;
+package pl.pjatk.kajwel.test.model;
 
-public class Car {
-    private String name;
-    private String model;
+public class TestCar {
+    private final String name;
+    private final String model;
 
-    public Car() {
+    public TestCar() {
         this.name = "Some happy car";
         this.model = "The best one";
     }
 
-    public Car(String name, String model) {
+    public TestCar(String name, String model) {
         this.name = name;
         this.model = model;
     }
