@@ -42,7 +42,8 @@ public class TestController {
     }
 
     @GetMapping("/exception")
-    public void getException() {
+    public ResponseEntity<Void> getException() {
         this.testService.throwRuntimeException();
+        return ResponseEntity.ok().build();
     }
 }
